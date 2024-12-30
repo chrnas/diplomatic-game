@@ -6,7 +6,11 @@ A strategic game focused on diplomacy and city building.
 ## Installation
 ### Play game
 1. To run game first make sure Java is installed.
-2. Download and launch the JavaOO.jar file.
+2. clone repo
+```
+git clone https://github.com/chrnas/diplomatic-game.git
+```
+4. Launch the diplomaticGame.jar file.
 
 ### Development
 Clone this repo.

@@ -22,7 +22,7 @@ Execute the diplomaticGame.jar file and play the game.
 
 ## Contributing
 
-Project is finished however contains a lot of bugs and missing content this could be improved abd added.
+Project is finished however contains a lot of bugs and missing content this could be improved and added.
 
 ## License
 

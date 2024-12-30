@@ -11,7 +11,7 @@ A strategic game focused on diplomacy and city building.
 ### Development
 Clone this repo.
 ```
-git clone https://gitlab.liu.se/tdde25/ctf https://github.com/chrnas/tank-ai-game.git](https://github.com/chrnas/diplomatic-game.git
+git clone https://github.com/chrnas/diplomatic-game.git
 ```
 Edited and compiled in IntellJ IDEA 2024 using Main.java as main file.
 

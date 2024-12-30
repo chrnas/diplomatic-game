@@ -10,7 +10,7 @@ A strategic game focused on diplomacy and city building.
 ```
 git clone https://github.com/chrnas/diplomatic-game.git
 ```
-4. Launch the diplomaticGame.jar file.
+3. Launch the diplomaticGame.jar file.
 
 ### Development
 Clone this repo.

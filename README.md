@@ -1,6 +1,5 @@
-# diplomaticGame
-A strategic game focused on diplomacy.
-The game is unfinished and contains a lot of bugs.
+# Diplomatic game
+A strategic game focused on diplomacy and city building.
 
 ![screencap.png](screencap.png)
 
@@ -23,8 +22,7 @@ Execute the diplomaticGame.jar file and play the game.
 
 ## Contributing
 
-Project is finished however contains a lot of bugs and missing content. 
-The game is playable but doesn't work great and contains a lot of missing features.
+Project is finished however contains a lot of bugs and missing content this could be improved abd added.
 
 ## License
 

@@ -1,7 +1,6 @@
 # Diplomatic game
 A strategic game focused on diplomacy and city building.
-
-![screencap.png](screencap.png)
+![screencap](https://github.com/user-attachments/assets/5a681c3f-a158-4e1d-b896-c1665f10d304)
 
 ## Installation
 ### Play game

@@ -57,12 +57,12 @@ public class Faction {
     }
 
     public void increaseFactionPower(int increase){
-        factionPower += increase;
+        this.factionPower += increase;
         this.factionPower = comparisonLimit(this.factionPower,100);
     }
 
     public void decreaseFactionPower(int decrease){
-        factionPower -= decrease;
+        this.factionPower -= decrease;
         this.factionPower = comparisonLimit(this.factionPower,100);
     }
 

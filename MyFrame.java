@@ -111,6 +111,7 @@ public class MyFrame extends JFrame implements MouseListener {
 
     public void tickOneTurn(){
         nation.oneTurn();
+        updatePanels();
     }
 
     public void addStartingCityMenu(City city,Ruler ruler){
@@ -146,19 +147,21 @@ public class MyFrame extends JFrame implements MouseListener {
         currentCity = city;
         currentRuler = ruler;
         currentPlayer = player;
-
-        configureCityPanelButtons(city);
-        configureBuildingPanel(city,ruler);
-        configureStatsPanelButtons(city);
-        configureDiplomacyPanelButtons(player, ruler);
-        configureRulerPanelButtons(ruler,player);
-        configureEventPanel(city);
-        configureFactionPanelButtons(city,player);
-        configureAttackPanel(city,ruler);
+        if(city != null) {
+            configureCityPanelButtons(city);
+            configureBuildingPanel(city,ruler);
+            configureStatsPanelButtons(city);
+            configureDiplomacyPanelButtons(player, ruler);
+            configureRulerPanelButtons(ruler,player);
+            configureEventPanel(city);
+            configureFactionPanelButtons(city,player);
+            configureFactionPanelInfo(city);
+            configureAttackPanel(city,ruler);
+        }
     }
 
     public void configureMainMenuPanel(){
-        mainMenuPanel.setLocation(1840,920);
+        mainMenuPanel.setLocation(1840,940);
         mainMenuPanel.getEndTurnButton().addActionListener(new ActionListener() {
            @Override
            public void actionPerformed(ActionEvent e) {
@@ -172,7 +175,7 @@ public class MyFrame extends JFrame implements MouseListener {
                    mainMenuPanel.setVisible(false);
                }
            });
-        mainMenuPanel.getexitGameButton().addActionListener(new ActionListener() {
+        mainMenuPanel.getExitGameButton().addActionListener(new ActionListener() {
                @Override
                public void actionPerformed(ActionEvent e) {
                    System.exit(0);

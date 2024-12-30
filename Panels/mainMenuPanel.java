@@ -8,9 +8,6 @@ public class mainMenuPanel extends JPanel {
     JLabel headLabel;
 
     JButton endTurnButton;
-    JButton button1;
-    JButton button2;
-    JButton button3;
     JButton exitGameButton;
     JButton closeButton;
 
@@ -35,16 +32,10 @@ public class mainMenuPanel extends JPanel {
         headLabel.setBounds(0,0,80,10);
         this.add(headLabel);
 
-        endTurnButton = maker.standardPanelButton("endTurn",0,20);
-        button1 = maker.standardPanelButton("button",0,40);
-        button2 = maker.standardPanelButton("button",0,60);
-        button3 = maker.standardPanelButton("button",0,80);
-        exitGameButton = maker.standardPanelButton("Exit Game",0,100);
-        closeButton = maker.standardPanelButton("Close",0,120);
+        endTurnButton = maker.standardPanelButton("End Turn",0,60);
+        exitGameButton = maker.standardPanelButton("Exit Game",0,80);
+        closeButton = maker.standardPanelButton("Close",0,100);
         this.add(endTurnButton);
-        this.add(button1);
-        this.add(button2);
-        this.add(button3);
         this.add(exitGameButton);
         this.add(closeButton);
 
@@ -71,19 +62,7 @@ public class mainMenuPanel extends JPanel {
         return endTurnButton;
     }
 
-    public JButton getButton1() {
-        return button1;
-    }
-
-    public JButton getButton2() {
-        return button2;
-    }
-
-    public JButton getButton3() {
-        return button3;
-    }
-
-    public JButton getexitGameButton() {
+    public JButton getExitGameButton() {
         return exitGameButton;
     }
 

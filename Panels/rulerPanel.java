@@ -16,8 +16,6 @@ public class rulerPanel extends JPanel {
     JLabel rulerInfo6;
     JLabel rulerInfo7;
 
-    JButton familyButton;
-
     JButton diplomacyButton;
 
     JButton closeButton;
@@ -57,9 +55,6 @@ public class rulerPanel extends JPanel {
         this.add(rulerInfo6);
         rulerInfo7 = componentMaker.createStandardPanelLabel("",0,110);
         this.add(rulerInfo6);
-
-        familyButton = componentMaker.standardPanelButton("Family",32,130);
-        this.add(familyButton);
 
         diplomacyButton = componentMaker.standardPanelButton("Diplomacy", 32 , 150);
         this.add(diplomacyButton);
@@ -120,10 +115,6 @@ public class rulerPanel extends JPanel {
 
     public JLabel getRulerInfo7() {
         return rulerInfo7;
-    }
-
-    public JButton getFamilyButton() {
-        return familyButton;
     }
 
     public void removeAllActionListeners(){

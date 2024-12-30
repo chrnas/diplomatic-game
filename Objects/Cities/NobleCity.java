@@ -21,4 +21,7 @@ public class NobleCity extends AbstractCity {
     public int getFame() {
         return fame;
     }
+    public int countCityIncome(){
+        return super.getBaseCityIncome() + ((super.getClergyFaction().getFactionPower()*super.getClergyFaction().getPopulation())/10);
+    }
 }

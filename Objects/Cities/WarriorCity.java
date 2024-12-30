@@ -20,4 +20,7 @@ public class WarriorCity extends AbstractCity {
     public int getWarSpirit() {
         return warSpirit;
     }
+    public int countCityIncome(){
+        return super.getBaseCityIncome() + ((super.getMilitaryFaction().getFactionPower() + super.getMilitaryFaction().getPopulation())/10);
+    }
 }

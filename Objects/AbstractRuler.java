@@ -84,7 +84,7 @@ public abstract class AbstractRuler implements Ruler {
     }
 
     public boolean enactPolicy(Policy policy, Ruler approachingRuler) {
-        if (rulerOpinions.size() > 0 && approachingRuler.getRulerOpinions().size() > 0) {
+        if (!rulerOpinions.isEmpty() && !approachingRuler.getRulerOpinions().isEmpty()) {
             int currentReceivingRulerOpinion = rulerOpinions.get(approachingRuler.getName());
             int currentApproachingPlayerOpinion = approachingRuler.getRulerOpinions().get(name);
             if (currentReceivingRulerOpinion > policy.opinionThreshold && currentApproachingPlayerOpinion > policy.opinionThreshold && !policy.active) {

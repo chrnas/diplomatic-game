@@ -21,4 +21,8 @@ public class FreeCity extends AbstractCity {
     public int getFreedomFactor() {
         return freedomFactor;
     }
+
+    public int countCityIncome(){
+        return super.getBaseCityIncome() + (super.getPopularOpinion()*freedomFactor)/10;
+    }
 }

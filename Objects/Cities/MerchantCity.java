@@ -22,4 +22,7 @@ public class MerchantCity extends AbstractCity {
     public int getTradePower() {
         return tradePower;
     }
+    public int countCityIncome(){
+        return super.getBaseCityIncome() + ((super.getTraderFaction().getFactionPower()+super.getTraderFaction().getPopulation())*tradePower)/10;
+    }
 }
